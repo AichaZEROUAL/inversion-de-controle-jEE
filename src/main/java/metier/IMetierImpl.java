@@ -18,4 +18,8 @@ public class IMetierImpl implements IMetier {
         double res = t * 100;
         return 0;
     }
+
+    public IMetierImpl(IDao dao) {
+        this.dao = dao;
+    }
 }
